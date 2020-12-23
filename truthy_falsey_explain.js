@@ -8,7 +8,7 @@
 // False - compare both type and value ===
 // Falsey - compare only value ==
 
-/** Falsey */ 
+/** Falsey */
 //----------------
 // Empty string: ""
 // 0
@@ -16,7 +16,7 @@
 // undefined
 // NaN
 
-/** Truthy */ 
+/** Truthy */
 //----------------
 // Object: {}
 // Array: []
@@ -28,12 +28,12 @@
 // Cast to Truthy to True boolean
 // เครื่องมือในการ cast Truthy เป็น boolean เพื่อใช้ compare แบบ === ได้่ทั้ง value และ type
 
-var something = 1;
-console.log(typeof something)
+var something = !!"";
+console.log(typeof something);
 if (something == true) {
-  console.log('Something');
+  console.log("Something");
 } else {
-  console.log('Nothing');
+  console.log("Nothing");
 }
 
 // www.codemobiles.com
