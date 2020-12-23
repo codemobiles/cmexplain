@@ -3,7 +3,7 @@
 // True - compare both type and value ===
 // Truthy - compare only value ==
 
-/** Falsey vs Falsey */
+/** False vs Falsey */
 //----------------
 // False - compare both type and value ===
 // Falsey - compare only value ==
@@ -24,15 +24,16 @@
 // Number other than zero: 3.14
 // Date: new Date();
 
-
-/** Double exclamation mark */
+/** Double exclamation mark !! */
 // Cast to Truthy to True boolean
 // เครื่องมือในการ cast Truthy เป็น boolean เพื่อใช้ compare แบบ === ได้่ทั้ง value และ type
 
-var nothing = "";
-console.log(typeof nothing)
-if (nothing == true) {
-  console.log('Nothing');
-} else {
+var something = 1;
+console.log(typeof something)
+if (something == true) {
   console.log('Something');
+} else {
+  console.log('Nothing');
 }
+
+// www.codemobiles.com
